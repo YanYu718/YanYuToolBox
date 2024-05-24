@@ -1,0 +1,31 @@
+{
+  "name": "YanYu-Tool-Box",
+  "private": true,
+  "version": "0.0.0",
+  "main": "main.js",
+  "scripts": {
+    "Packager": "electron-packager ./ YanRainToolBox --platform=win32 --arch=x64 --icon=./public/YanYuico.ico --overwrite",
+    "dev": "vite",
+    "v-Build": "vite build",
+    "preview": "vite preview",
+    "Electron-strat": "nodemon --exec electron . --ext .js,.vue,.html,.css",
+    "strat": "electron ."
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "child_process": "^1.0.2",
+    "iconv-lite": "^0.6.3",
+    "puppeteer": "^22.7.1",
+    "usb": "^2.12.1",
+    "vue": "^3.2.45",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "electron": "^22.0.0",
+    "electron-packager": "^17.1.2",
+    "vite": "^4.0.0",
+    "vue-router": "^4.1.6"
+  }
+}
